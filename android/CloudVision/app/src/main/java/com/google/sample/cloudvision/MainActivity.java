@@ -267,6 +267,9 @@ public class MainActivity extends AppCompatActivity {
                 } catch (GoogleJsonResponseException e) {
                     Log.d(TAG, "failed to make API request because " + e.getContent());
                 } catch (IOException e) {
+                    // Toast.makeText(getActivity(),"failed to make API request because of other IOException ",
+                     //        Toast.LENGTH_LONG).show();
+                    // Schreib auf dem Debug konsole fur die Entwickler
                     Log.d(TAG, "failed to make API request because of other IOException " +
                             e.getMessage());
                 }
